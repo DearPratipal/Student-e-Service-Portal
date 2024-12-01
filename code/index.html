@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/Logo 1.svg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student e-Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>MAHARISHI MARKANDESHWAR (DEEMED TO BE UNIVERSITY)</h1>
+            <p>Mullana-Ambala, Haryana</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#food">Food</a></li>
+                <li><a href="/code/room.html">Rooms</a></li>
+                <li><a href="#services">Other Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#more">More</a></li>
+            <!-- <span>
+                <li><button class="btn" onclick="login()">Login</button></li>
+                <li><button class="btn" onclick="register()">Register</button></li>
+            </span> -->
+                <li><button class="btn" onclick="login()">Login</button></li>
+                <li><button class="btn" onclick="register()">Register</button></li>
+            </ul>
+        </nav>
+        
+        <div class="announcement-bar">
+            <marquee id="announcement" behavior="scroll" direction="left">
+                <span class="announcement-icon">🔔</span>
+                <i class="fas fa-bullhorn announcement-icon"></i>
+                This project is developed and designed By @Dear Pratipal & Shubham Kumar from Branch of BCA 3rd 'G'. All rights are reserved by &copy; MM(DU) student's.
+            </marquee>
+        </div>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome to MM(DU)</h2>
+            <p>Enjoy the food at our Royal Common Mess</p>
+        </section>
+        
+        <section id="food-menu">
+            <h3>Food Menu</h3>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Meal</th>
+                        <th>Time</th>
+                        <th>Items</th>
+                    </tr>
+                </thead>
+                <tbody id="food">
+                    <section name="Sunday">
+                        <tr>
+                            <td rowspan="4">Sunday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Sunday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Sunday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Sunday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Monday">
+                        <tr>
+                            <td rowspan="4">Monday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Monday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Monday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Monday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Tuesday">
+                        <tr>
+                            <td rowspan="4">Tuesday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Tuesday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Tuesday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Tuesday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Wednesday">
+                        <tr>
+                            <td rowspan="4">Wednesday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Wednesday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Wednesday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Wednesday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Thursday">
+                        <tr>
+                            <td rowspan="4">Thursday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Thursday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Thursday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Thursday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Friday">
+                        <tr>
+                            <td rowspan="4">Friday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Friday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Friday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Friday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <section name="Saturday">
+                        <tr>
+                            <td rowspan="4">Saturday</td>
+                            <td>Morning (Breakfast)</td>
+                            <td>07:00 AM - 08:45 AM</td>
+                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Saturday</td> -->
+                            <td>Lunch</td>
+                            <td>11:50 AM - 01:40 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Saturday</td> -->
+                            <td>Evening(Snacks)</td>
+                            <td>04:00 PM - 05:00 PM</td>
+                            <td>Tea, Milk, Biscuit</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Saturday</td> -->
+                            <td>Dinner</td>
+                            <td>07:00 PM - 08:45 PM</td>
+                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
+                        </tr>
+                    </section>
+                    <!-- Add more rows as required -->
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <form id="contact-form" method="get">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message">Wow! Vey nice food exprience! Thank You!</textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Maharishi Markandeshwar University. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
