@@ -7,41 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- <header>
-        <div class="navbar">
-            <img src="../../images/L1_1_83_14886.png" alt="MM(DU) Logo" class="logo">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Other Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">More</a></li>
-                </ul>
-            </nav>
-            <div class="auth-buttons">
-                <a href="#" class="register-btn">Register</a>
-                <a href="#" class="login-btn">Login</a>
-            </div>
-        </div>
-    </header> -->
-
     <main>
         <section class="hero">
-            <!-- <div class="logo" id="header">
-                <span>
-                    <img src="../../images/L1_1_83_14886.png" alt="MM(DU) Logo" class="logo">
-                </span>
-                <span>
-                    <h1>Welcome to MM(DU)</h1>
-                    <p>MAHARISHI MARKANDESHWAR (DEEMED TO BE UNIVERSITY)</p>
-                </span>
-            </div> -->
-
             <img src="../../images/L1_1_83_14886.png" alt="MM(DU) Logo" class="logo">
             <h1>Welcome to MM(DU)</h1>
             <p>MAHARISHI MARKANDESHWAR (DEEMED TO BE UNIVERSITY)</p>
-
         </section>
         
         <section class="login-section">
@@ -67,7 +37,7 @@
                         <a href="#" class="forgot-password">Forgot Password?</a>
                     </div>
                     
-                    <button type="submit" id="submit" onsubmit="" class="login-btn">Login</button>
+                    <button type="submit" id="submit" onclick="validateLoginForm(event)" class="login-btn">Login</button>
                     
                     <div class="divider">-OR-</div>
                     
@@ -77,10 +47,11 @@
                         <a href="#" class="apple-login">Apple</a>
                     </div>
                     
-                    <p>Don't Have An Account? <a href="#" class="create-account">Create Account</a></p>
+                    <p>Don't Have An Account? <a href="/code/Registration/index.html" class="create-account">Create Account</a></p>
                 </form>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

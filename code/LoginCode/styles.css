@@ -217,6 +217,12 @@ header {
     color: #f72585;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+}
+
+p .create-account {
+    color: #f72585;
+    justify-content: center;
 }
 
 .create-account:hover {

@@ -48,9 +48,11 @@ function validateLoginForm(event) {
 
     // Simulate successful login
     if (email === 'kumarpratipal123@gmail.com' && password === 'password123') {
+        alert('Login Successful! Thank You');
         localStorage.setItem('loggedIn', 'true'); // Set logged-in status in localStorage
-        window.location.href = '../../code/index.html'; // Redirect to the index page after successful login
+        window.location.href = '../../code/room.html'; // Redirect to the index page after successful login
     } else {
+        alert('Unsucessful Check the Details!')
         loginError.textContent = 'Invalid email or password.';
     }
 }

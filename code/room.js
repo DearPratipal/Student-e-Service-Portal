@@ -1,5 +1,5 @@
 // Ensure the user is logged in before accessing the Rooms page
-document.addEventListener("DOMContentLoaded", checkAuthentication);
+// document.addEventListener("DOMContentLoaded", checkAuthentication);
 
 
 document.addEventListener("DOMContentLoaded", () => {
