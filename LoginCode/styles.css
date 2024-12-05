@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #0077b6, #90e0ef);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #90e0ef;
+}
+
+.auth-buttons a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.register-btn {
+    background: #90e0ef;
+    color: black;
+    margin-right: 10px;
+}
+
+.register-btn:hover {
+    background: #0077b6;
+    color: white;
+}
+
+.login-btn {
+    background: #0077b6;
+    color: white;
+}
+
+.login-btn:hover {
+    background: #90e0ef;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-image: url('background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.left-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-content h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.animation {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.right-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background: #f72585;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #d90429;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-options a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 0.9rem;
+}
+
+.divider {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.social-login a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-login a:hover {
+    background: #0077b6;
+    color: white;
+}
+
+.create-account {
+    color: #f72585;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .left-content, .right-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,94 @@
+@media only screen and (max-width: 500px) {
+    .header{
+        padding: 0;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.nav ul li {
+    margin: 0 10px;
+}
+.nav ul li a,
+.nav ul li button {
+    text-decoration: none;
+    color: white;
+    background: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.nav ul li button:hover,
+.nav ul li a:hover {
+    background: #004080;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.menu-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+.menu-table th,
+.menu-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.menu-table th {
+    background: #007bff;
+    color: white;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+.announcement-bar {
+    background: #ffc107; /* Yellow color for visibility */
+    color: #000;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    top: 200;
+    z-index: 1000;
+    border-bottom: 2px solid #007bff; /* Blue border for better styling */
+}
+
+marquee {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.announcement-icon {
+    font-size: 20px; /* Size of the icon */
+    margin-right: 10px; /* Space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+}
