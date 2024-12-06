@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Other Services</h1>
+        <button class="redirect-btn" onclick="window.location.href='/code/index.html'">Go to Main Page</button>
+    </header>
+
+    <main class="container">
+        <section class="service" id="complaint-section">
+            <img src="/images/complaint.png" alt="Register Complaint">
+            <h2>Register a Complaint</h2>
+            <button onclick="showForm('complaintForm')">Register Now</button>
+            <div id="complaintForm" class="form-section" style="display: none;">
+                <h3>Complaint Form</h3>
+                <form action="/Backend/complaint.php" method="POST" enctype="multipart/form-data">
+                    <label for="name">Name of Hosteller</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="roll">Roll No. of Hosteller</label>
+                    <input type="text" id="roll" name="roll" required>
+
+                    <label for="mobile">Mobile No.</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+
+                    <label for="hostel">Hostel No. Floor No. Room No.</label>
+                    <input type="text" id="hostel" name="hostel" required>
+
+                    <label for="type">Choose Complaint Type</label>
+                    <select id="type" name="type" onchange="showOtherInput(this.value)">
+                        <option value="Electrician">Electrician</option>
+                        <option value="Plumber">Plumber</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div id="otherType" style="display: none;">
+                        <label for="other">Specify Complaint Type</label>
+                        <input type="text" id="other" name="other">
+                    </div>
+
+                    <label for="image">Upload Image of Issue</label>
+                    <input type="file" id="image" name="image">
+
+                    <label for="description">Description of Complaint</label>
+                    <textarea id="description" name="description" required></textarea>
+
+                    <button type="submit">Submit Complaint</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="service" id="maintenance-section">
+            <img src="/images/maintainance.png" alt="Register Maintenance">
+            <h2>Register Hostel Maintenance</h2>
+            <button onclick="showForm('maintenanceForm')">Register Now</button>
+            <div id="maintenanceForm" class="form-section" style="display: none;">
+                <h3>Maintenance Form</h3>
+                <form action="/Backend/hostelMaintenance.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="roll">Roll No.</label>
+                    <input type="text" id="roll" name="roll" required>
+
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department" required>
+
+                    <label for="mobile">Mobile No.</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+
+                    <label for="floor">Floor No.</label>
+                    <input type="text" id="floor" name="floor" required>
+
+                    <label for="room">Room No.</label>
+                    <input type="text" id="room" name="room" required>
+
+                    <label for="type">Complaint Type</label>
+                    <select id="type" name="type">
+                        <option value="Swipper">Swipper</option>
+                        <option value="Cleaner">Cleaner</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <button type="submit">Submit Maintenance</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="service" id="leave-section">
+            <img src="/images/leave.png" alt="Leave Application">
+            <h2>Drop a Leave Application</h2>
+            <button onclick="showForm('leaveForm')">Apply Now</button>
+            <div id="leaveForm" class="form-section" style="display: none;">
+                <h3>Leave Application Form</h3>
+                <form action="/Backend/leaveApplication.php" method="POST">
+                    <label for="name">Name of Student</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department" required>
+
+                    <label for="room">Room No.</label>
+                    <input type="text" id="room" name="room" required>
+
+                    <label for="leaving-date">Leaving Date</label>
+                    <input type="date" id="leaving-date" name="leaving_date" required>
+
+                    <label for="leaving-time">Leaving Time</label>
+                    <input type="time" id="leaving-time" name="leaving_time" required>
+
+                    <label for="address">Address of Leaving</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <label for="mobile">Mobile No.</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+
+                    <button type="submit">Submit Leave</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed and Developed by DearPratipal! Thank You: Maharishi Markandeshwar (Deemed to be University), Mullana-Ambala.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
