@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Services Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Hostel Services Portal</h1>
+        <button class="login-btn" id="openLoginModal">Login</button>
+    </header>
+
+    <!-- Modal Popup for Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeLoginModal">&times;</button>
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed and Developed by DearPratipal! &copy; MM(DU).</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
