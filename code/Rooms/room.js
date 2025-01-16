@@ -55,5 +55,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function navigateToIndex() {
     // Redirects to the main index page
-    window.location.href = "index.html"; // Replace with the actual path of your index page
+    window.location.href = "/code/index.html"; // Replace with the actual path of your index page
 }
