@@ -8,25 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Single Room",
             description: "A cozy single room with a comfortable bed and study table.",
             price: "₹5000 per month",
-            image: "https://via.placeholder.com/300x200?text=Single+Room"
+            image: "https://media.designcafe.com/wp-content/uploads/2022/07/01130654/all-in-one-study-table-with-bookshelf-in-bedroom.jpg"
         },
         {
             name: "Double Room",
             description: "Spacious double room with twin beds and shared amenities.",
             price: "₹7000 per month",
-            image: "https://via.placeholder.com/300x200?text=Double+Room"
+            image: "https://roomraccoon.com/wp-content/uploads/2024/06/2-1.png"
         },
         {
             name: "Deluxe Room",
             description: "Luxury room with premium facilities and personal washroom.",
             price: "₹10000 per month",
-            image: "https://via.placeholder.com/300x200?text=Deluxe+Room"
+            image: "https://www.hotelsonarbangla.com/wp-content/uploads/2024/03/Deluxe-room-ground-floor-2.webp"
         },
         {
             name: "Suite Room",
             description: "A premium suite for a comfortable and royal stay.",
             price: "₹15000 per month",
-            image: "https://via.placeholder.com/300x200?text=Suite+Room"
+            image: "https://gos3.ibcdn.com/c4a80158-e0a9-4b1d-8ef4-7850972cd7ba.jpg"
         }
     ];
 
@@ -54,6 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function navigateToIndex() {
-    // Redirects to the main index page
-    window.location.href = "/code/index.html"; // Replace with the actual path of your index page
+    window.location.href = "/index.html";
 }

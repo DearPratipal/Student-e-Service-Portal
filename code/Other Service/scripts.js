@@ -11,3 +11,7 @@ function showOtherInput(value) {
         otherInput.style.display = "none";
     }
 }
+
+function redirectToHome() {
+    window.location.href = "index.html";
+}
