@@ -4,270 +4,642 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../images/Logo 1.svg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student e-Service</title>
-    <link rel="stylesheet" href="/code/styles.css">
-    <link rel="stylesheet" href="/code/style.css">
+    <title>Student e-Service | MM(DU)</title>
+    <link rel="stylesheet" href="/code/style_indexpage.css">
+    <script src="/code/script_indexpage.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>MAHARISHI MARKANDESHWAR (DEEMED TO BE UNIVERSITY)</h1>
-            <p>Mullana-Ambala, Haryana</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MM(DU)</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#food" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Food Menu</span>
+                </a>
+                <a href="/code/rooms/room.html" class="nav-link">
+                    <i class="fas fa-bed"></i>
+                    <span>Rooms</span>
+                </a>
+                <a href="/code/Other Service/index.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#food">Food</a></li>
-                <li><a href="/code/rooms/room.html">Rooms</a></li>
-                <li><a href="/code/Other Service/index.html">Other Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#more">More</a></li>
-            <!-- <span>
-                <li><button class="btn" onclick="login()">Login</button></li>
-                <li><button class="btn" onclick="register()">Register</button></li>
-            </span> -->
-            </ul>
-        </nav>
-        
-        <div class="announcement-bar">
-            <marquee id="announcement" behavior="scroll" direction="left">
-                <span class="announcement-icon">🔔</span>
-                <i class="fas fa-bullhorn announcement-icon"></i>
-                This project is developed and designed By @Dear Pratipal & Shubham Kumar from Branch of BCA 3rd 'G'. All rights are reserved by &copy; MM(DU) student's.
+    </nav>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <i class="fas fa-bullhorn"></i>
+            <marquee behavior="scroll" direction="left">
+                This project is developed and designed by @Dear Pratipal & Shubham Kumar from Branch of BCA 3rd 'G'. All rights are reserved by © MM(DU) students.
             </marquee>
         </div>
-    </header>
-    <main>
-        <section id="welcome">
-            <h2>Welcome to MM(DU)</h2>
-            <p>Enjoy the food at our Royal Common Mess</p>
+    </div>
+
+<!-- Header -->
+<header class="hero-section">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hero-content-side-by-side">
+            <div class="university-info">
+                <h1 class="university-name">MAHARISHI MARKANDESHWAR</h1>
+                <h2 class="university-subtitle">(DEEMED TO BE UNIVERSITY)</h2>
+                <p class="university-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Mullana-Ambala, Haryana
+                </p>
+            </div>
+            <div class="hero-welcome">
+                <h3>Welcome to MM(DU) Student Services</h3>
+                <p>Experience excellence in dining at our Royal Common Mess</p>
+                <a href="#food" class="cta-button">
+                    <i class="fas fa-arrow-down"></i>
+                    View Menu
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Food Menu Section -->
+        <section id="food" class="food-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Weekly Food Menu</h2>
+                    <p>Nutritious and delicious meals served fresh daily</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-navigation">
+                        <button class="day-btn active" data-day="sunday">
+                            <i class="fas fa-sun"></i>
+                            Sunday
+                        </button>
+                        <button class="day-btn" data-day="monday">
+                            <i class="fas fa-moon"></i>
+                            Monday
+                        </button>
+                        <button class="day-btn" data-day="tuesday">
+                            <i class="fas fa-star"></i>
+                            Tuesday
+                        </button>
+                        <button class="day-btn" data-day="wednesday">
+                            <i class="fas fa-leaf"></i>
+                            Wednesday
+                        </button>
+                        <button class="day-btn" data-day="thursday">
+                            <i class="fas fa-heart"></i>
+                            Thursday
+                        </button>
+                        <button class="day-btn" data-day="friday">
+                            <i class="fas fa-fire"></i>
+                            Friday
+                        </button>
+                        <button class="day-btn" data-day="saturday">
+                            <i class="fas fa-gem"></i>
+                            Saturday
+                        </button>
+                    </div>
+
+                    <!-- Sunday Menu -->
+                    <div class="day-menu active" id="sunday">
+                        <h3><i class="fas fa-sun"></i> Sunday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Paratha</span>
+                                    <span class="item">Pickle</span>
+                                    <span class="item">Curd</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Chole</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Puri</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Pickle</span>
+                                    <span class="item">Semolina Halwa</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Biscuit</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Alu Palak</span>
+                                    <span class="item">Mix Dal</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monday Menu -->
+                    <div class="day-menu" id="monday">
+                        <h3><i class="fas fa-moon"></i> Monday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Poha</span>
+                                    <span class="item">Bread Butter</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Grevy</span>
+                                    <span class="item">Arhar Dal</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Biscuit</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Mix Veg</span>
+                                    <span class="item">Moong Masoor Dal</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday Menu -->
+                    <div class="day-menu" id="tuesday">
+                        <h3><i class="fas fa-star"></i> Tuesday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Plain Paratha</span>
+                                    <span class="item">Alu Sabji</span>
+                                    <span class="item">Pickle</span>
+                                    <span class="item">Curd</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Kaddu</span>
+                                    <span class="item">Rajma</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Namkeen</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Gobhi/Sarso Saag</span>
+                                    <span class="item">Urad Cana Dal</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                    <span class="item">Rice Kheer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday Menu -->
+                    <div class="day-menu" id="wednesday">
+                        <h3><i class="fas fa-leaf"></i> Wednesday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Muli Paratha</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Matar</span>
+                                    <span class="item">Channa Dal</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Biscuit</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Mix Raita</span>
+                                    <span class="item">Mix Dal</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Veg Biryani</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday Menu -->
+                    <div class="day-menu" id="thursday">
+                        <h3><i class="fas fa-heart"></i> Thursday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Plain Paratha</span>
+                                    <span class="item">Alu Sabji</span>
+                                    <span class="item">Curd</span>
+                                    <span class="item">Achar</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Kadhi Pakoda</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Namkeen</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Aloo Pata Gobhi Matar</span>
+                                    <span class="item">Moong Masoor Dal</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                    <span class="item">Crusted Fruit/Sweet Sewian</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Friday Menu -->
+                    <div class="day-menu" id="friday">
+                        <h3><i class="fas fa-fire"></i> Friday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Kulche Chole/Pao Bhaji</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Louki/Ghiya</span>
+                                    <span class="item">Rajma</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Biscuit</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Jeera Alu</span>
+                                    <span class="item">Dal Makhni</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday Menu -->
+                    <div class="day-menu" id="saturday">
+                        <h3><i class="fas fa-gem"></i> Saturday Menu</h3>
+                        <div class="meals-grid">
+                            <div class="meal-card breakfast">
+                                <div class="meal-header">
+                                    <i class="fas fa-coffee"></i>
+                                    <h4>Breakfast</h4>
+                                    <span class="time">07:00 AM - 08:45 AM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Namkeen Sewaiya</span>
+                                    <span class="item">Bread Butter</span>
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                </div>
+                            </div>
+                            <div class="meal-card lunch">
+                                <div class="meal-header">
+                                    <i class="fas fa-utensils"></i>
+                                    <h4>Lunch</h4>
+                                    <span class="time">11:50 AM - 01:40 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Alo Methi</span>
+                                    <span class="item">Kala Chana</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Raita</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                            <div class="meal-card snacks">
+                                <div class="meal-header">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <h4>Evening Snacks</h4>
+                                    <span class="time">04:00 PM - 05:00 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Tea</span>
+                                    <span class="item">Milk</span>
+                                    <span class="item">Namkeen</span>
+                                </div>
+                            </div>
+                            <div class="meal-card dinner">
+                                <div class="meal-header">
+                                    <i class="fas fa-moon"></i>
+                                    <h4>Dinner</h4>
+                                    <span class="time">07:00 PM - 08:45 PM</span>
+                                </div>
+                                <div class="meal-items">
+                                    <span class="item">Pakal/Shahi/Keadhiya Paneer</span>
+                                    <span class="item">Hari Moong Dal</span>
+                                    <span class="item">Roti</span>
+                                    <span class="item">Rice</span>
+                                    <span class="item">Salad</span>
+                                    <span class="item">Achar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="food-menu">
-            <h3>Food Menu</h3>
-            <table class="menu-table">
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Meal</th>
-                        <th>Time</th>
-                        <th>Items</th>
-                    </tr>
-                </thead>
-                <tbody id="food">
-                    <section name="Sunday">
-                        <tr>
-                            <td rowspan="4">Sunday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Aloo Paratha, Pickle, Curd, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Sunday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Aloo Chole, Rice, Puri, Salad, Raita, Pickle, Semolina Halwa</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Sunday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Biscuit</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Sunday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Alu Palak, Mix Dal Roti, Rice, Salad, Achar</td>
-                        </tr>
-                    </section>
-                    <section name="Monday">
-                        <tr>
-                            <td rowspan="4">Monday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Poha, Bread Butter, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Monday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Aloo Grevy, Arhar Dal, Rice, Roti, Salad, Raita, Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Monday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Biscuit</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Monday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Mic Veg. Moong Masoor Dal, Roti, Rice, Salad, Achar</td>
-                        </tr>
-                    </section>
-                    <section name="Tuesday">
-                        <tr>
-                            <td rowspan="4">Tuesday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Plain Paratha, Alu Sabji, Pickle, Curd, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Tuesday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Kaddu, Rajma, Rice, Roti, Salad, Raita, Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Tuesday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Namkeen</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Tuesday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Aloo Gobhi/Sarso Saag, Urad Cana Dal, Rice, Roti, Salad, Achar, Rice Kheer</td>
-                        </tr>
-                    </section>
-                    <section name="Wednesday">
-                        <tr>
-                            <td rowspan="4">Wednesday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Muli Paratha, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Wednesday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Aloo Matar, Channa Dal, Rice, Roti, Salad, Raita Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Wednesday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Biscuit</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Wednesday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Mix Raita, Mix Dal, Roti, Veg Briyani, Salad, Achar, Mix Raita</td>
-                        </tr>
-                    </section>
-                    <section name="Thursday">
-                        <tr>
-                            <td rowspan="4">Thursday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Plain Paratha, Alu Sabji, Curd, Achar, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Thursday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Kadhi Pakoda, Rice, Roti, Salad, Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Thursday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Namkeen</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Thursday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Aloo Pata Gobhi Matar, Moong Masoor Dal, Rice, Roti, Salad, Achar, Crusted Fruit/ Sweet Sewian</td>
-                        </tr>
-                    </section>
-                    <section name="Friday">
-                        <tr>
-                            <td rowspan="4">Friday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Kulche Chole/Pao Bhazi, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Friday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Louki/Ghiya, Rajma, Roti, Salad, Raita, Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Friday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Biscuit</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Friday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Jeera Alu, Dal Makhni, Roti, Rice, Salad Achar</td>
-                        </tr>
-                    </section>
-                    <section name="Saturday">
-                        <tr>
-                            <td rowspan="4">Saturday</td>
-                            <td>Morning (Breakfast)</td>
-                            <td>07:00 AM - 08:45 AM</td>
-                            <td>Namkeen Sewaiya, Bread Butter, Tea, Milk</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Saturday</td> -->
-                            <td>Lunch</td>
-                            <td>11:50 AM - 01:40 PM</td>
-                            <td>Alo Methi, Kala Chana, Rice, Roti, Salad, Raita, Achar</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Saturday</td> -->
-                            <td>Evening(Snacks)</td>
-                            <td>04:00 PM - 05:00 PM</td>
-                            <td>Tea, Milk, Namkeen</td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Saturday</td> -->
-                            <td>Dinner</td>
-                            <td>07:00 PM - 08:45 PM</td>
-                            <td>Pakal/Shahi/Keadhiya Panner, Hari Moong Dal, Roti, Rice, Salad, Achar</td>
-                        </tr>
-                    </section>
-                    <!-- The mess menu completed! -->
-                </tbody>
-            </table>
-        </section>
-        <hr>
-        <section id="contact">
-            <h3>Contact Us</h3>
-            <form id="contact-form" method="get">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message">Wow! Vey nice food exprience! Thank You!</textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear your feedback about our services</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 1734 273487</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@mmumullana.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>MM University, Mullana-Ambala, Haryana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5">Wow! Very nice food experience! Thank You!</textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Maharishi Markandeshwar University. All rights reserved.</p>
-    </footer>
-    <script src="/code/script.js"></script>
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '67892e7e5b70a0f65a8110f7' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script>
-</body>
-</html>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MM(DU) Student Services</h3>
+                    <p>Providing excellent dining and accommodation services to our students.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#food">Food Menu</a></li>
+                        <li><a href="/code/rooms/room.html">Rooms</a></li>
+                        <li><a href="/code/Other Service/index.html">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section
